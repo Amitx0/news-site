@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="main-nav container flex">
+        <a href="#" onclick="reload()" class="logo">
+          <img src="wolf.png" alt="companylogo" />
+        </a>
+        <div class="nav-links">
+          <ul class="flex">
+           <li class="hover-link nav-item" id="ipl" onclick="OnNavClick('ipl')">IPL</li>
+<li class="hover-link nav-item" id="Finance" onclick="OnNavClick('Finance')">Finance</li>
+<li class="hover-link nav-item" id="Politics" onclick="OnNavClick('Politics')">Politics</li>
+
+          </ul>
+        </div>
+        <div class="search-bar flex">
+          <input id="input-text" type="text" class="news-input" placeholder="e.g." />
+          <button class="search-button" id="search-button">Search</button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="card-container" flex id="card-container">
+        
+       
+        
+        
+        
+        
+        </div>
+        
+      </div>
+    </main>
+    <template id="template-news-card">
+      <div class="card">
+          <div class="card-header">
+            <img
+              src="https://via.placeholder.com/400x200"
+              alt="news-img"
+              id="news-image"
+            />
+          </div>
+          <div class="card-content">
+            <h3 id="news-title">This is the content</h3>
+            <h6 class="news-sorce" id="news-sorce">amit</h6>
+            <p class="news-discription" id="news-discription">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+              dolorum quisquam optio. Ipsam voluptatibus eos rem consectetur
+              quos, reprehenderit nesciunt ratione impedit porro repellendus
+              voluptate et atque accusamus minus quia.
+            </p>
+          </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>
